@@ -161,6 +161,20 @@ async function startGame(difficulty) {
   }
 }
 
+// ── Markdown stripping ─────────────────────────────────
+// Perplexity API sometimes returns markdown formatting in option strings,
+// which reveals correct answers visually before selection. Strip it here.
+const stripMarkdown = (text) => {
+  return text
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")  // [text](url) → text (before emphasis to avoid partial matches)
+    .replace(/\*\*(.+?)\*\*/g, "$1")           // **bold**
+    .replace(/\b__(.+?)__\b/g, "$1")            // __bold__ (\b at _ requires adjacent non-word char)
+    .replace(/\*(.+?)\*/g, "$1")               // *italic*
+    .replace(/\b_([^_]+?)_\b/g, "$1")          // _italic_ (\b skips mid-word underscores like item_name)
+    .replace(/`([^`]+)`/g, "$1")               // `code` (negated class prevents cross-match)
+    .replace(/^#+\s+(.+)$/gm, "$1");           // # Headers → text
+};
+
 // ── API call: generate questions via Cloudflare Worker ──
 async function generateQuestions(difficulty) {
   const model = MODELS[difficulty];
@@ -237,9 +251,6 @@ async function generateQuestions(difficulty) {
     throw new Error("No questions found in API response");
   }
 
-  // Perplexity API sometimes returns bold markdown (**text**) in option strings,
-  // which reveals correct answers visually before selection. Strip it here.
-  const stripMarkdown = (text) => text.replace(/\*\*(.+?)\*\*/g, "$1");
   for (const q of questions) {
     if (Array.isArray(q.options)) {
       q.options = q.options.map(stripMarkdown);

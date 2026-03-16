@@ -168,9 +168,9 @@ Complete before/after reference:
 
 ## Phases
 
-- [ ] **Phase 1: Baseline fonts** — Update desktop font sizes (lines 102–764, excluding media queries)
-- [ ] **Phase 2: Mobile responsive** — Update max-width: 480px media query (lines 779–796)
-- [ ] **Phase 3: Tablet responsive** — Update 481px–768px media query (lines 799–800)
+- [x] **Phase 1: Baseline fonts** — Update desktop font sizes (lines 102–764, excluding media queries)
+- [x] **Phase 2: Mobile responsive** — Update max-width: 480px media query (lines 779–796)
+- [x] **Phase 3: Tablet responsive** — Update 481px–768px media query (lines 799–800)
 - [ ] **Phase 4: Visual verification** — Test across mobile (320px, 480px), tablet (768px), and desktop (1024px+) to ensure readability and layout integrity
 - [ ] **Phase 5: Manual QA** — Load all 7 screens (title, alias, loading, quiz, results, error, leaderboard) and verify text wrapping and button overflow
 

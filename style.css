@@ -119,7 +119,7 @@ html, body {
 }
 
 .title-prompt {
-  font-size: 10px;
+  font-size: 14px;
   color: var(--text-dim);
   letter-spacing: 2px;
   animation: blink 1.2s step-end infinite;
@@ -138,7 +138,7 @@ html, body {
    ===================================================== */
 .btn {
   font-family: var(--font);
-  font-size: 10px;
+  font-size: 14px;
   line-height: 1.4;
   padding: 12px 8px;
   border: none;
@@ -203,7 +203,7 @@ html, body {
 }
 
 .loading-sub {
-  font-size: 8px;
+  font-size: 14px;
   color: var(--text-dim);
   line-height: 2;
 }
@@ -248,7 +248,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 9px;
+  font-size: 14px;
   color: var(--text-dim);
   padding: 4px 0;
 }
@@ -289,7 +289,7 @@ html, body {
 }
 
 .question-text {
-  font-size: 10px;
+  font-size: 14px;
   line-height: 2;
   color: var(--text);
 }
@@ -304,7 +304,7 @@ html, body {
 .btn-option {
   background-color: var(--stone);
   color: var(--coal);
-  font-size: 9px;
+  font-size: 14px;
   padding: 14px 10px;
   text-align: left;
   line-height: 1.8;
@@ -360,7 +360,7 @@ html, body {
 }
 
 .explanation-label {
-  font-size: 11px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -368,7 +368,7 @@ html, body {
 .explanation-label.wrong-label   { color: #FF4A4A; }
 
 .explanation-text {
-  font-size: 8px;
+  font-size: 14px;
   line-height: 2;
   color: var(--text-dim);
 }
@@ -377,7 +377,7 @@ html, body {
   background-color: var(--grass);
   color: var(--coal);
   align-self: flex-end;
-  font-size: 9px;
+  font-size: 14px;
   padding: 10px 16px;
   box-shadow:
     inset  var(--border-sz)  var(--border-sz) 0 #7DC43F,
@@ -447,7 +447,7 @@ html, body {
 }
 
 .results-score-text {
-  font-size: 8px;
+  font-size: 14px;
   color: var(--text-dim);
 }
 
@@ -458,14 +458,14 @@ html, body {
 }
 
 .results-pct {
-  font-size: 11px;
+  font-size: 16px;
   color: var(--text-dim);
 }
 
 .btn-play-again {
   background-color: var(--grass);
   color: var(--coal);
-  font-size: 10px;
+  font-size: 14px;
   padding: 14px 28px;
   box-shadow:
     inset  var(--border-sz)  var(--border-sz) 0 #7DC43F,
@@ -508,13 +508,13 @@ html, body {
 }
 
 .error-msg {
-  font-size: 8px;
+  font-size: 14px;
   color: var(--text-dim);
   line-height: 2;
 }
 
 .btn-retry, .btn-back-title {
-  font-size: 9px;
+  font-size: 14px;
   padding: 12px 20px;
 }
 
@@ -551,7 +551,7 @@ html, body {
 .btn-leaderboard {
   background-color: var(--stone);
   color: var(--coal);
-  font-size: 10px;
+  font-size: 14px;
   padding: 12px 8px;
   box-shadow:
     inset  var(--border-sz)  var(--border-sz) 0 var(--stone-light),
@@ -574,7 +574,7 @@ html, body {
 .btn-change-alias {
   background-color: var(--stone);
   color: var(--coal);
-  font-size: 8px;
+  font-size: 12px;
   padding: 10px 8px;
   box-shadow:
     inset  var(--border-sz)  var(--border-sz) 0 var(--stone-light),
@@ -607,13 +607,13 @@ html, body {
 }
 
 .alias-title {
-  font-size: 14px;
+  font-size: 18px;
   color: var(--gold);
   text-shadow: 3px 3px 0 var(--coal);
 }
 
 .alias-tip {
-  font-size: 7px;
+  font-size: 14px;
   color: var(--text-dim);
   line-height: 2.2;
   background-color: var(--coal);
@@ -651,13 +651,13 @@ html, body {
 }
 
 .alias-hint {
-  font-size: 7px;
+  font-size: 14px;
   color: var(--text-dim);
   line-height: 2;
 }
 
 .alias-error {
-  font-size: 7px;
+  font-size: 14px;
   color: #FF4A4A;
   line-height: 2;
 }
@@ -666,7 +666,7 @@ html, body {
    RESULTS — points earned
    ===================================================== */
 .results-points {
-  font-size: 10px;
+  font-size: 14px;
   color: var(--gold);
   text-shadow: 2px 2px 0 var(--coal);
   letter-spacing: 1px;
@@ -699,7 +699,7 @@ html, body {
 .leaderboard-loading,
 .leaderboard-empty,
 .leaderboard-error {
-  font-size: 8px;
+  font-size: 14px;
   color: var(--text-dim);
   line-height: 2.5;
   padding: 24px 0;
@@ -713,12 +713,12 @@ html, body {
 .leaderboard-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 9px;
+  font-size: 14px;
 }
 
 .leaderboard-table th {
   color: var(--text-dim);
-  font-size: 7px;
+  font-size: 12px;
   padding: 8px 6px;
   text-align: left;
   letter-spacing: 1px;
@@ -741,7 +741,7 @@ html, body {
 
 /* Rank cell — colored by position */
 .leaderboard-table .rank-cell {
-  font-size: 8px;
+  font-size: 12px;
   font-weight: bold;
   width: 40px;
 }
@@ -759,7 +759,7 @@ html, body {
 /* Score cell */
 .leaderboard-table .score-cell {
   color: var(--gold);
-  font-size: 9px;
+  font-size: 14px;
 }
 
 /* =====================================================
@@ -776,8 +776,8 @@ html, body {
    RESPONSIVE — mobile-first adjustments
    ===================================================== */
 @media (max-width: 480px) {
-  .title-main  { font-size: 18px; }
-  .title-sub   { font-size: 13px; }
+  .title-main  { font-size: 24px; }
+  .title-sub   { font-size: 17px; }
 
   .difficulty-grid {
     grid-template-columns: 1fr;
@@ -787,15 +787,15 @@ html, body {
     grid-template-columns: 1fr;
   }
 
-  .question-text      { font-size: 9px; }
-  .results-score      { font-size: 16px; }
-  .results-title      { font-size: 12px; }
-  .alias-input        { font-size: 18px; letter-spacing: 6px; }
-  .leaderboard-title  { font-size: 12px; }
-  .leaderboard-table  { font-size: 8px; }
+  .question-text      { font-size: 14px; }
+  .results-score      { font-size: 20px; }
+  .results-title      { font-size: 16px; }
+  .alias-input        { font-size: 24px; letter-spacing: 6px; }
+  .leaderboard-title  { font-size: 16px; }
+  .leaderboard-table  { font-size: 12px; }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-  .title-main { font-size: 22px; }
-  .title-sub  { font-size: 15px; }
+  .title-main { font-size: 28px; }
+  .title-sub  { font-size: 20px; }
 }
